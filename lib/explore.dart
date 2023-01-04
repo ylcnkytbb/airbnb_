@@ -19,7 +19,7 @@ class _ExplorePage extends State<Explore> {
 
   final List _cardListBeache = [
     ["Mikonos, Greece", "mikonos.jpeg", 4.81, "Beach and Mountain View", "4-9 Feb", 23.469],
-    ["Porto, Portugal", "beach.jpeg", 4.62, "Beach View ", "6-11 April", 20.030],
+    ["Porto, Portugal", "beach.jpeg", 4.69, "Beach View ", "6-11 April", 20.030],
     ["Sicily, Italy", "italya_beach.html", 4.9, "Amazing Sicily View", "13-21 May", 19.300],
   ];
 
