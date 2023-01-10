@@ -10,7 +10,7 @@ class Explore extends StatefulWidget {
 }
 
 class _ExplorePage extends State<Explore> {
-  String _selected = "Beache";
+  String _selected = "Beach";
   String _searchString = "";
 
   final List _cardList = [
@@ -26,7 +26,7 @@ class _ExplorePage extends State<Explore> {
   static const List<String> _searchOptions = <String>[
     'Mikanos',
     'Porto',
-    'Sicilya'
+    'Sicily'
   ];
 
   Widget _createCard(List cardInfo) {
@@ -239,7 +239,7 @@ class _ExplorePage extends State<Explore> {
               slivers: [
                 SliverList(
                   delegate: SliverChildListDelegate([
-                    _createFilterCard("Beache", Icons.beach_access),
+                    _createFilterCard("Beach", Icons.beach_access),
                     _createFilterCard("Pool", Icons.pool),
                     _createFilterCard("Bungalow", Icons.bungalow_sharp),
                     _createFilterCard("Extraordinary", Icons.architecture),
@@ -258,7 +258,7 @@ class _ExplorePage extends State<Explore> {
               SliverList(
                 delegate: SliverChildListDelegate([
                   LayoutBuilder(builder: (context, constraints) {
-                    if (_selected == "Beache") {
+                    if (_selected == "Beach") {
                       return Column(
                           children: _cardListBeache
                               .map((cardInfo) => cardInfo[0]
